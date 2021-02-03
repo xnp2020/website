@@ -145,7 +145,7 @@ For more details please see the [Network Plugin Requirements](/docs/concepts/ext
 
 | 协议     | 方向   | 端口范围   | 作用                    | 使用者                       |
 |----------|--------|------------|-------------------------|------------------------------|
-| TCP      | 入站   | 6443       | Kubernetes API 服务器   | 所有组件                     |
+| TCP      | 入站   | 6443*       | Kubernetes API 服务器   | 所有组件                     |
 | TCP      | 入站   | 2379-2380  | etcd 服务器客户端 API   | kube-apiserver, etcd         |
 | TCP      | 入站   | 10250      | Kubelet API             | kubelet 自身、控制平面组件   |
 | TCP      | 入站   | 10251      | kube-scheduler          | kube-scheduler 自身          |
